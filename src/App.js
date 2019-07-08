@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+
+// import logo from './logo.svg';
+import Editor from 'components/Editor';
+import Preview from 'components/Preview';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      markdown: ''
+    };
+    this.onInputChange = this.onInputChange.bind(this);
+  }
+
+  onInputChange(e) {
+    this.setState({
+      markdown: e.target.value
+    });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Container fluid={true}>
+          <Row>
+            <Col>
+              <Editor
+                markdown={this.state.markdown}
+                onInputChange={this.onInputChange}
+              />
+            </Col>
+            <Col>
+              <Preview markdown={this.state.markdown} />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    );
+  }
 }
 
 export default App;
