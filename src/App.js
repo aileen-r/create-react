@@ -9,6 +9,8 @@ import Editor from 'components/Editor';
 import Preview from 'components/Preview';
 import './App.css';
 
+const placeholderPath = require('placeholder.md');
+
 class App extends Component {
   constructor() {
     super();
@@ -18,6 +20,17 @@ class App extends Component {
     };
     this.getRenderedMarkdown = this.getRenderedMarkdown.bind(this);
     this.onInputChange = this.onInputChange.bind(this);
+  }
+
+  componentDidMount() {
+    fetch(placeholderPath)
+      .then(res => res.text())
+      .then(text =>
+        this.setState({
+          markdownRaw: text,
+          markdownHtml: this.getRenderedMarkdown(text)
+        })
+      );
   }
 
   getRenderedMarkdown(raw) {
