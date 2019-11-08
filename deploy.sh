@@ -30,7 +30,7 @@ mkdir projects/markdown-editor
 # - all content for the directory'./static/'
 # Move all matches to the directory './projects/markdown-editor/'
 echo '2/4 Move relevant files'
-find . | grep -Ev '^.$|^.\/projects$|^.\/static\/.+' | xargs -I{} mv -v {} projects/markdown-editor
+find . | grep -Ev '^.$|^.\/projects$|^.\/projects\/markdown-editor$|^.\/static\/.+' | xargs -I{} mv -v {} projects/markdown-editor
 
 cd -
 
