@@ -46,6 +46,5 @@
       "prettier --single-quote --write",
       "git add"
     ]
-  },
-  "homepage": "/projects/markdown-editor"
+  }
 }
