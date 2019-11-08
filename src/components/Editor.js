@@ -8,7 +8,7 @@ const Editor = props => {
     <Form onSubmit={e => e.preventDefault}>
       <FormGroup>
         <Label for="editor" hidden>
-          Markdown Editor
+          Simple Markdown Editor
         </Label>
         <Input
           className="editor-input"

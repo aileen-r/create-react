@@ -1,4 +1,4 @@
-# Welcome to my React Markdown Previewer!
+# Start editing Markdown
 
 ## This is a sub-heading...
 

@@ -55,7 +55,7 @@ class App extends Component {
         <Container fluid={true}>
           <div className="px-4 py-5">
             <header className="mb-5 d-flex justify-content-center">
-              <h1>Markdown Previewer</h1>
+              <h1>Simple Markdown Editor</h1>
             </header>
             <Row>
               <Col>
