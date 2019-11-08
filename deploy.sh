@@ -1,6 +1,8 @@
 # abort on errors
 set -e
 
+echo $PWD
+
 # build
 npm run build
 
@@ -17,6 +19,7 @@ npm run build
 
 # Browse into './build/' directory
 cd build
+echo $PWD
 # Create './projects/' directory
 echo '1/4 Create "projects/markdown-editor" directory'
 mkdir projects
@@ -28,6 +31,8 @@ mkdir projects/markdown-editor
 # Move all matches to the directory './projects/markdown-editor/'
 echo '2/4 Move relevant files'
 find . | grep -Ev '^.$|^.\/projects$|^.\/static\/.+' | xargs -I{} mv -v {} projects/markdown-editor
-# Browse into './projects/markdown-editor/' directory
-cd projects/markdown-editor
+
+cd -
+
+echo "Simple Markdown Editor" > index.html
 # Done
