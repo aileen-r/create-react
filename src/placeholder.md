@@ -74,10 +74,10 @@ And finally...
 
 You can add images. Like these photos of Barkley. Look at him.
 
-![A dog lying on grass.](/images/barkley.jpg)
+![A dog lying on grass.](https://aileenrae.co.uk/projects/markdown-editor/images/barkley.jpg)
 
 _Looooook._
 
-![A dog lying on grass, tongue out, blinking in the sun.](/images/barkley2.jpg)
+![A dog lying on grass, tongue out, blinking in the sun.](https://aileenrae.co.uk/projects/markdown-editor/images/barkley2.jpg)
 
 Good boyee.
