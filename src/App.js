@@ -4,10 +4,8 @@ import marked from 'marked';
 import DOMPurify from 'dompurify';
 import autosize from 'autosize';
 
-// import logo from './logo.svg';
 import Editor from 'components/Editor';
 import Preview from 'components/Preview';
-import './App.css';
 
 const placeholderPath = require('placeholder.md');
 
