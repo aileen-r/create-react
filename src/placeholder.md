@@ -1,48 +1,83 @@
-# Start editing Markdown
+# This is a title
 
-## This is a sub-heading...
+Start typing here...
 
-### And here's some other cool stuff:
+## Here is a subheading
 
-Heres some code, `<div></div>`, between 2 backticks.
+### Basics
+
+You can add some **bold** text, or _italics_, or go crazy with **_both at once_**! You can even ~~strikethrough~~.
+
+You can also add blockquotes:
+
+> It's dangerous to go alone. Take this 🗡️.
+
+and even [add links](https://aileenrae.co.uk).
+
+### Lists
+
+#### Numbered List
+
+1. You can add list items like this.
+1. You don't even need to use sequential numbers.
+1. Markdown's got you; human error is real.
+
+#### Bulleted List
+
+- Bulleted lists can be built with hyphens `-`
+
+* Or asteriks `*`
+
+- It doesn't matter which
+
+#### Nested Lists
+
+- A bulleted list
+  1. With a numbered list inside
+  - with a bulleted list inside that
+  2. It's lists
+  - all
+    - the
+      - way
+        - down
+
+### Code
+
+#### Single-line code
+
+`<span>A single line of code is wrapped in backticks.</span>`
+
+#### Multi-line code
+
+Multi-line code is wrapped in triple backticks.
 
 ````
-// this is multi-line code:
+// Multi-line code sample
 
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '```' && lastLine == '```') {
-    return multiLineCode;
-  }
+function printCode(inputString) {
+  return "```" + inputString + "```";
 }
 ````
 
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
+### Tables
 
-There's also [links](https://www.freecodecamp.com), and
-
-> Block Quotes!
-
-And if you want to get really crazy, even tables:
+I definitely copied and pasted this table because it was too much effort to type out but, yup, you can even type out tables:
 
 | Wild Header      | Crazy Header    | Another Header?    |
 | ---------------- | --------------- | ------------------ |
 | Your content can | be here, and it | can be here....    |
 | And here.        | Okay.           | I think we get it. |
 
-- And of course there are lists.
-  - Some are bulleted.
-    - With different indentation levels.
-      - That look like this.
+And finally...
 
-1. And there are numbererd lists too.
-1. Use just 1s if you want!
-1. But the list goes on...
+### Images
 
-- Even if you use dashes or asterisks.
+You can add images. Like these photos of Barkley. Look at him.
 
-* And last but not least, let's not forget embedded images:
+![A dog lying on grass.](/images/barkley.jpg)
 
-![React Logo w/ Text](https://goo.gl/Umyytc)
+_Looooook._
+
+![A dog lying on grass, tongue out, blinking in the sun.](/images/barkley2.jpg)
+
+Good boyee.

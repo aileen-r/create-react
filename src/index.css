@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f9f6f8;
+  color: #191d1e;
 }
 
 h1,
@@ -31,6 +32,10 @@ code {
 
 a {
   color: #00afb5;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* https://coolors.co/f9f6f8-ea3358-00afb5-b2cfd6-c3d9e0 */
